@@ -1,0 +1,85 @@
+body{
+    background-color: hsl(217, 54%, 11%);
+}
+.box{
+    
+    border: 2px solid;
+    width: 320px;
+    height: 600px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    margin: 50px auto;
+    padding: 10px;
+    border-collapse: collapse;
+}
+h3{
+    color: white;
+}
+.card{
+    border-radius: 20px;
+    margin-left: 9px;
+    position: relative;
+}
+p{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+.des{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dia{
+    color: rgb(105, 229, 229);
+}
+.des img {
+    margin-right: 4px; 
+}
+.cre{
+    display: flex;
+    align-items: center;
+}
+.cre img {
+    margin-right: 10px; /* Adjust this value to control the space between the image and the text */
+}
+span{
+    color: white;
+    margin-left: 10px;
+}
+hr{
+    border-color: hsl(215, 32%, 27%);
+    border-width: 2px;
+}
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: cyan;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+.image-container:hover .overlay {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: none;
+}
+.image-container:hover .view {
+    display: block;
+}
